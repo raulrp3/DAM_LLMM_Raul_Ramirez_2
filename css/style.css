@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+main{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+header{
+	background-color: #3F7AA2;
+}
+#principal{
+	display: flex;
+	align-items: flex-start;
+	position: relative;
+	top: 5.5em;
+	left: 3em;
+}
+#principal img{
+	width: 10%;
+	margin-right: 2em;
+	background-color: #BEC1CA;
+}
+#name{
+	background-color: #BEDBEB;
+	padding-left: 1em;
+	padding-top: 1.5em;
+	padding-bottom: 1em;
+}
+#name p{
+	color: gray;
+}
+#data{
+	background-color: #F8F8F8;
+	padding-left: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+#data p{
+	color: gray;
+}
+#data a{
+	text-decoration: none;
+	color: gray;
+}
