@@ -45,3 +45,52 @@ header{
 	text-decoration: none;
 	color: gray;
 }
+section{
+	margin-top: 8em;
+}
+section article{
+	display: flex;
+	border-top: 4px solid #F8F8F8;
+	padding-right: 1em;
+}
+article .heading{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	width: 30%;
+}
+.heading h2{
+	color: #9ABFD1;
+}
+article .text{
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	width: 70%;
+}
+.text li span{
+	padding: 0.25em;
+}
+.text .heading_text{
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.1em;
+}
+.text strong{
+	font-size: 1.1em;
+}
+.text p{
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
+}
+.end{
+	border-bottom: 4px solid #F8F8F8;
+}
+.text div{
+	margin-bottom: 0.1em;
+}
+.text .skills{
+	list-style: none;
+}
+.skills li{
+	display: flex;
+	justify-content: space-between;
+}
