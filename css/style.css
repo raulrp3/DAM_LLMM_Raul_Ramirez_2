@@ -96,3 +96,23 @@ article .text{
 	display: flex;
 	justify-content: space-between;
 }
+progress{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+progress::-webkit-progress-bar{
+	background-color: #BEDBEB;
+	border-radius: 0.5em;
+}
+progress::-webkit-progress-value{
+	background-color: #3F7AA2;
+	border-radius: 0.5em;
+}
+progress::-moz-progress-bar{
+	background-color: #3F7AA2;
+	border-radius: 0.5em;
+}
+.moz_bar{
+	background-color: #BEDBEB;
+	border-radius: 0.5em;
+}
