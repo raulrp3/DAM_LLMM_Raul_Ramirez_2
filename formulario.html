@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ES-es">
+<head>
+	<meta charset="UTF-8">
+	<title>DAM_LLMM_Raul_Ramirez_2</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+</head>
+<body>
+	<main>
+		<header>
+			<div id="principal">
+				<img src="media/perfil.png" alt="Imagen de perfil">
+				<div>
+					<div id="name">
+						<h1>Raúl Ramírez Pérez</h1>
+						<p>Programador aplicaciones web y multiplataforma</p>
+					</div>
+					<div id="data">
+						<p><i class="fas fa-map-pin"></i> C/ San Joaquín 12, 23700, Linares, Jaén</p>
+						<p><a href="https://github.com/raulrp3"><i class="fab fa-github"></i> raulrp3</a></p>
+						<p><a href="https://gmail.com"><i class="far fa-envelope"></i> raul.ramirez@escuelaestech.es</a></p>
+						<p><i class="fas fa-phone"></i> 622751595</p>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section>
+			<form action="index.html">
+				<p><label for="name">Nombre</label><input type="text" name="name"></p>
+				<p><label for="lastname">Apellidos</label><input type="text" name="lastname" size="50"></p>
+				<p><label for="telephono">Teléfono</label><input type="tel" name="telephono"></p>
+				<p><label for="email">Correo electrónico</label><input type="email" name="email" size="40"></p>
+				<div class="sex">
+					<p><label for="sex">Sexo</label></p>
+					<p><input type="radio" name="sex" checked>Hombre</p>
+					<p><input type="radio" name="sex">Mujer</p>
+					<p><input type="radio" name="sex">Otro</p>
+				</div>
+				<p><label for="affair">Asunto</label><input type="text" name="affair" size="50"></p>
+				<div class="message">
+					<p><label for="message">Mensaje</label></p>
+					<textarea name="message" cols="50" rows="10"></textarea>
+				</div>
+				<div class="opinion">
+					<label for="opnion">Opina sobre mi web</label>
+					<select name="opinion">
+						<option value="excelente">Excelente</option>
+						<option value="buena">Buena</option>
+						<option value="regular">Hay cosas que mejorar</option>
+						<option value="mal">Horrosa</option>
+					</select>
+				</div>
+				<div class="buttons">
+					<input type="submit" name="submit" value="Enviar">
+					<input type="reset" name="reset" value="Borrar">
+				</div>
+				<p><label for="privacy">¿Aceptas los términos y condiciones legales?</label><input type="checkbox" name="privacy"></p>
+			</form>
+		</section>
+	</main>
+</body>
+</html>
