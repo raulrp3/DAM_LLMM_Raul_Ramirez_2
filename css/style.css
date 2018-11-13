@@ -17,7 +17,7 @@ header{
 	display: flex;
 	align-items: flex-start;
 	position: relative;
-	top: 5.5em;
+	top: 5.75em;
 	left: 3em;
 }
 #principal img{
@@ -115,5 +115,18 @@ progress::-moz-progress-bar{
 }
 .moz_bar{
 	background-color: #BEDBEB;
+	border-radius: 0.5em;
+}
+footer{
+	background-color: #3F7AA2;
+	margin-top: 1em;
+	padding: 1.5em;
+	text-align: right;
+}
+footer a{
+	text-decoration: none;
+	color: black;
+	background-color: #BEDBEB;
+	padding: 0.5em;
 	border-radius: 0.5em;
 }
