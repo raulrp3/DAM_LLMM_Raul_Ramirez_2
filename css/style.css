@@ -123,7 +123,7 @@ footer{
 	padding: 1.5em;
 	text-align: right;
 }
-footer a{
+.button{
 	text-decoration: none;
 	color: black;
 	background-color: #BEDBEB;
@@ -228,9 +228,12 @@ form .sex{
 .buttons input{
 	padding: 0.5em;
 	border-radius: 0.5em;
-	color: white;
-	background-color: #3F7AA2
 }
 .buttons input[type='submit']{
 	margin-right: 1em;
+}
+.menu-home{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 0.5em;
 }
