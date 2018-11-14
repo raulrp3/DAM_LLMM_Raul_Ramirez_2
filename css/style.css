@@ -128,7 +128,14 @@ footer{
 	color: black;
 	background-color: #BEDBEB;
 	padding: 0.5em;
+	padding-left: 0.75em;
+	padding-right: 0.75em;
 	border-radius: 0.5em;
+}
+.button:hover{
+	background: rgba(0,0,0,0);
+	color: white;
+	box-shadow: inset 0 0 0 3px white;
 }
 .menu{
 	position: fixed;
@@ -236,4 +243,17 @@ form .sex{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 0.5em;
+	padding: 0.5em;
+}
+.menu-home a{
+	text-decoration: none;
+	background-color: #3F7AA2;
+	color: white;
+	border-radius: 0.5em;
+	padding: 0.5em;
+}
+.menu-home a:hover{
+	background: rgba(0,0,0,0);
+	color: #3F7AA2;
+	box-shadow: inset 0 0 0 3px #3F7AA2;
 }
