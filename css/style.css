@@ -9,9 +9,18 @@ main{
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 2em;
+	height: 100%;
+	display: grid;
+	grid-gap: 0.5em;
+	grid-template-columns: repeat(12,1fr);
+	grid-template-areas:
+		"h h h h h h h h h h h h "
+		"a a s s s s s s s s s s "
+		"a a s s s s s s s s s s ";
 }
 header{
 	background-color: #3F7AA2;
+	grid-area: h;
 }
 #principal{
 	display: flex;
@@ -50,6 +59,7 @@ header{
 }
 section{
 	margin-top: 8em;
+	grid-area: s;
 }
 section article{
 	display: flex;
@@ -59,6 +69,7 @@ section article{
 article .heading{
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
+	padding-left: 0.5em;
 	width: 30%;
 }
 h2{
@@ -67,7 +78,8 @@ h2{
 article .text{
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-	width: 70%;
+	margin-left: 4em;
+	width: 60%;
 }
 .text li span{
 	padding: 0.25em;
@@ -117,84 +129,46 @@ progress::-moz-progress-bar{
 	background-color: #BEDBEB;
 	border-radius: 0.5em;
 }
-footer{
-	background-color: #3F7AA2;
-	margin-top: 1em;
-	padding: 1.5em;
-	text-align: right;
-}
-.button{
-	text-decoration: none;
-	color: black;
-	background-color: #BEDBEB;
+aside{
+	margin-top: 8em;
 	padding: 0.5em;
-	padding-left: 0.75em;
-	padding-right: 0.75em;
-	border-radius: 0.5em;
-}
-.button:hover{
-	background: rgba(0,0,0,0);
-	color: white;
-	box-shadow: inset 0 0 0 3px white;
-}
-.menu{
-	position: fixed;
-	top: 20px;
-	left: 20px;
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	width: 50px;
-	height: 50px;
+	background-color: #3F7AA2;
+	grid-area: a;
+}
+aside nav{
 	background-color: #BEDBEB;
-	border-radius: 50%;
-	transition: transform 250ms ease;
-	cursor: pointer;
-	z-index: 2;
+	text-align: center;
 }
-#menu{
-	display: none;
+aside ul{
+	list-style: none;
 }
-#menu:checked ~ .menu{
-	background-color: transparent;
+aside li{
+	border: 1px solid gray;
 }
-#menu:checked ~ .dropdown-menu{
-	left: 0px;
-	transition: left 500ms ease;
-	background-color: rgba(190, 219, 235,0.5);
-}
-#menu:checked ~ .menu{
-	background-color: white;
-}
-.dropdown-menu{
-	position: fixed;
-	top: 0;
-	left: -100%;
-	width: 300px;
-	height: 100vh;
-	margin: 0;
-	padding: 0;
-	transition: left 500ms ease;
-	z-index: 1;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.dropdown-menu ul{
-	position: relative;
-	list-style-type: none;
-	margin: 100px 0;
-	padding: 0;
-}
-.dropdown-menu li{
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-.dropdown-menu a{
+aside li a{
 	text-decoration: none;
 	color: gray;
-	font-size: 1.25em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	display: block;
+}
+.aside-form{
+	display: flex;
+	text-align: center;
+}
+.one-element{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.one-element li{
+	background-color: #BEDBEB;
+	list-style: none;
+	text-align: center;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
 }
 .heading-form{
 	margin-bottom: 0.5em;
@@ -238,22 +212,4 @@ form .sex{
 }
 .buttons input[type='submit']{
 	margin-right: 1em;
-}
-.menu-home{
-	display: flex;
-	justify-content: space-between;
-	margin-bottom: 0.5em;
-	padding: 0.5em;
-}
-.menu-home a{
-	text-decoration: none;
-	background-color: #3F7AA2;
-	color: white;
-	border-radius: 0.5em;
-	padding: 0.5em;
-}
-.menu-home a:hover{
-	background: rgba(0,0,0,0);
-	color: #3F7AA2;
-	box-shadow: inset 0 0 0 3px #3F7AA2;
 }
