@@ -134,6 +134,7 @@ aside{
 	padding: 0.5em;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	background-color: #3F7AA2;
 	grid-area: a;
 }
