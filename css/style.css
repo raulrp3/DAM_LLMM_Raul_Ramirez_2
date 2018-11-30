@@ -320,4 +320,14 @@ footer{
 		left: 0em;
 		margin: 1em;
 	}
+	form input[type='text'],input[type='tel'],input[type='email'],input[type='checkbox']{
+		width: 100%;
+	}
+	.message textarea{
+		width: 100%;
+	}
+	form .privacy{
+		flex-direction: column;
+		margin-bottom: 1em;
+	}
 }
