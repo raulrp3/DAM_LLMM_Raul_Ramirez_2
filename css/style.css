@@ -217,7 +217,7 @@ form .sex{
 footer{
 	display: none;
 }
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1500px){
 	main{
 		grid-template-areas: 
 			"h h h h h h h h h h h h "
